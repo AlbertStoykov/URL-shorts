@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}SmolUrls{% endblock %}
+{% block content %}
+    <h1>Existing SmolUrls</h1>
+{% for url in urls %}
+    <div class="all_urls">
+        <ul>
+            <li>{{ url.url_text }}</li>
+        </ul>
+    </div>
+{% endfor %}
+
+{% endblock %} 
